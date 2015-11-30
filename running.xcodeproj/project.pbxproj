@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3829C4C61C0C91C900D1D97E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3829C4C51C0C91C900D1D97E /* CoreLocation.framework */; };
+		3829C4CA1C0C921500D1D97E /* GPSLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3829C4C91C0C921500D1D97E /* GPSLocationManager.m */; };
 		38EA9F2B1C043BC300228B33 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 38EA9F2A1C043BC300228B33 /* main.m */; };
 		38EA9F2E1C043BC300228B33 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 38EA9F2D1C043BC300228B33 /* AppDelegate.m */; };
 		38EA9F311C043BC300228B33 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38EA9F301C043BC300228B33 /* ViewController.m */; };
@@ -46,6 +48,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3829C4C51C0C91C900D1D97E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		3829C4C81C0C921500D1D97E /* GPSLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GPSLocationManager.h; path = Main/GPSLocationManager.h; sourceTree = "<group>"; };
+		3829C4C91C0C921500D1D97E /* GPSLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GPSLocationManager.m; path = Main/GPSLocationManager.m; sourceTree = "<group>"; };
 		38EA9F261C043BC300228B33 /* running.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = running.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		38EA9F2A1C043BC300228B33 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		38EA9F2C1C043BC300228B33 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -81,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3829C4C61C0C91C900D1D97E /* CoreLocation.framework in Frameworks */,
 				38EA9FB31C04776200228B33 /* AddressBook.framework in Frameworks */,
 				38EA9FB11C04775C00228B33 /* AudioToolbox.framework in Frameworks */,
 				38EA9FAF1C04774C00228B33 /* AVFoundation.framework in Frameworks */,
@@ -109,6 +115,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3829C4C71C0C920200D1D97E /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				3829C4C81C0C921500D1D97E /* GPSLocationManager.h */,
+				3829C4C91C0C921500D1D97E /* GPSLocationManager.m */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
 		38EA9F1D1C043BC300228B33 = {
 			isa = PBXGroup;
 			children = (
@@ -132,6 +147,7 @@
 		38EA9F281C043BC300228B33 /* running */ = {
 			isa = PBXGroup;
 			children = (
+				3829C4C71C0C920200D1D97E /* Main */,
 				38EA9F2C1C043BC300228B33 /* AppDelegate.h */,
 				38EA9F2D1C043BC300228B33 /* AppDelegate.m */,
 				38EA9F2F1C043BC300228B33 /* ViewController.h */,
@@ -150,6 +166,7 @@
 		38EA9F291C043BC300228B33 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				3829C4C51C0C91C900D1D97E /* CoreLocation.framework */,
 				38EA9F5C1C04429400228B33 /* GaodeSDK */,
 				38EA9F2A1C043BC300228B33 /* main.m */,
 			);
@@ -327,6 +344,7 @@
 				38EA9F2E1C043BC300228B33 /* AppDelegate.m in Sources */,
 				38EA9FB61C04787B00228B33 /* SharedMapView.m in Sources */,
 				38EA9F2B1C043BC300228B33 /* main.m in Sources */,
+				3829C4CA1C0C921500D1D97E /* GPSLocationManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -568,6 +586,7 @@
 				38EA9F551C043BC300228B33 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		38EA9F561C043BC300228B33 /* Build configuration list for PBXNativeTarget "runningTests" */ = {
 			isa = XCConfigurationList;
@@ -576,6 +595,7 @@
 				38EA9F581C043BC300228B33 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		38EA9F591C043BC300228B33 /* Build configuration list for PBXNativeTarget "runningUITests" */ = {
 			isa = XCConfigurationList;
@@ -584,6 +604,7 @@
 				38EA9F5B1C043BC300228B33 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
